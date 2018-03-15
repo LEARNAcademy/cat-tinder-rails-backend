@@ -1,24 +1,17 @@
-# README
+# Cat Tinder Backend
+This app is built using Ruby on Rails, SQlite, and Rspec.  It is an API to drive the front end React application.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Development Setup
+Clone the repo then:
+```
+cd backend
+bundle install
+rake db:create db:migrate
+rails s
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Tests
+Once the app is setup for development, you can run the specs:
+```
+bundle exec rspec spec
+```
